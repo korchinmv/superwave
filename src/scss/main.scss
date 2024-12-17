@@ -4,4 +4,9 @@
 @import 'fonts';
 @import 'settings';
 
-@import './components/header';
+@import './components/ui/breadcrumbs';
+@import './components/ui/button-primary';
+
+@import './components/pages/service-page';
+
+@import './components/sections/head-page';

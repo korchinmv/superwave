@@ -24,6 +24,7 @@
   min-width: 375px;
   min-height: 100%;
   font-size: 16px;
+  line-height: 1.2;
   margin: 0;
 }
 
@@ -88,4 +89,19 @@ button {
   width: 1px;
   height: 1px;
   clip: rect(0 0 0 0);
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.4;
+  text-align: center;
+
+  @media screen and (width <= 1024px) {
+    font-size: 34px;
+  }
+
+  @media screen and (width <= 768px) {
+    font-size: 28px;
+  }
 }

@@ -1,5 +1,6 @@
 .head-page {
   padding: 15px 0 40px;
+  overflow: hidden;
 
   @media screen and (width <= 768px) {
     padding: 20px 0 45px;
@@ -7,6 +8,23 @@
 
   &__content {
     max-width: 583px;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 28px;
+      height: 28px;
+      background-color: var(--white-color);
+      position: absolute;
+      bottom: -55px;
+      left: 20px;
+      transform: rotate(45deg);
+
+      @media screen and (width <= 768px) {
+        bottom: -65px;
+      }
+    }
   }
 
   &__title {
@@ -47,8 +65,5 @@
 
   &__breadcrumbs {
     margin-bottom: 80px;
-  }
-
-  &__btn {
   }
 }

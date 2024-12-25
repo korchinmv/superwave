@@ -8,5 +8,12 @@
 
   &__icon {
     margin-left: 4px;
+    transition: transform ease 0.3s;
+  }
+
+  &--active {
+    .button-show-more__icon {
+      transform: rotate(180deg);
+    }
   }
 }

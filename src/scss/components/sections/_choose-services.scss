@@ -70,6 +70,9 @@
 
   &__nums-icon {
     margin-bottom: 16px;
+    height: 60px;
+    object-fit: contain;
+    width: fit-content;
   }
 
   &__nums-num {
@@ -91,6 +94,10 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.2;
+
+    @media screen and (width <= 768px) {
+      font-size: 14px;
+    }
   }
 
   &__text {
@@ -114,9 +121,12 @@
 
   &__hide {
     margin-bottom: 16px;
+    transition: all 0.3s;
 
     @media screen and (width <= 768px) {
-      display: none;
+      height: 0;
+      overflow: hidden;
+      position: absolute;
     }
   }
 

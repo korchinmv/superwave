@@ -56,16 +56,11 @@ const rulesChooseServiceForm = [
       },
     ],
   },
-  {
-    ruleSelector: ".input-company",
-    mailError: "Введите корректное сообщение",
-    rules: [
-      {
-        rule: "required",
-        errorMessage: "Напишите название компании",
-      },
-    ],
-  },
 ];
 
 validateForms("#choose-application-form", rulesChooseServiceForm, afterForm);
+validateForms(
+  "#choose-application-form-section",
+  rulesChooseServiceForm,
+  afterForm
+);

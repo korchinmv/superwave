@@ -22,6 +22,7 @@
     border-radius: 16px;
     background-color: var(--white-color);
     padding: 40px;
+    height: auto;
 
     @media screen and (width <= 990px) {
       padding: 20px;
@@ -77,6 +78,7 @@
 
   &__list {
     padding-left: 25px;
+    margin-bottom: 15px;
   }
 
   &__list-item {

@@ -15,23 +15,11 @@
 
   &__list {
     display: flex;
-    position: relative;
     padding-bottom: 80px;
 
     @media screen and (width <= 768px) {
       flex-direction: column;
       padding-bottom: 60px;
-    }
-
-    &::after {
-      content: '';
-      display: block;
-      width: 100%;
-      height: 1px;
-      background-color: var(--gray-color);
-      position: absolute;
-      left: 0;
-      bottom: 0;
     }
   }
 

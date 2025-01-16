@@ -6,6 +6,10 @@
     padding: 60px 0;
   }
 
+  &__inner {
+    display: flex;
+  }
+
   &__title {
     margin-bottom: 30px;
   }
@@ -88,6 +92,7 @@
   &__slider-controls {
     display: flex;
     align-items: center;
+    margin-bottom: 40px;
   }
 
   &__progressbar {
@@ -106,5 +111,9 @@
     @media screen and (width <= 768px) {
       display: none;
     }
+  }
+
+  &__btn {
+    margin: 0 auto;
   }
 }

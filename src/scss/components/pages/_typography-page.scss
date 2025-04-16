@@ -1,0 +1,19 @@
+.typography-page {
+  background-image: url('../img/hero/typography-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+
+  .head-page__title,
+  .head-page__text {
+    color: var(--white-color);
+  }
+
+  .head-page__title-accent {
+    text-transform: none;
+  }
+
+  .head-page__content {
+    max-width: 650px;
+  }
+}

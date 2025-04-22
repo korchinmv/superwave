@@ -1,0 +1,14 @@
+.button-white {
+  background-color: var(--white-color);
+  border-radius: 3px;
+  padding: 9px 20px;
+  font-weight: 500;
+  color: var(--accent-color);
+  line-height: 1.5;
+  border: 1px solid transparent;
+  transition: all 0.4s;
+
+  &:hover {
+    color: var(--black-color);
+  }
+}

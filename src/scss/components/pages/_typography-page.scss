@@ -16,4 +16,37 @@
   .head-page__content {
     max-width: 650px;
   }
+
+  &__section-container {
+    background-color: var(--bg-color);
+
+  }
+
+  &__wrapper {
+    position: relative;
+    padding: 120px 0 360px 0;
+
+    @media screen and (width <=768px) {
+      padding-top: 60px;
+    }
+  }
+
+  &__form {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(50%);
+    width: 100%;
+
+    .application-form__title {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__our-works {
+    @media screen and (width <=990px) {
+      margin-bottom: 60px;
+    }
+  }
 }

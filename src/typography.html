@@ -150,8 +150,43 @@
               <a class="our-works__link button-primary" href="#">Посмотреть все</a>
             </div>
 
+            <ul class="our-works__grid">
+              <li class="our-works__item our-works__item--1 swiper-slide">
+                <div class="our-works__gradient"></div>
+
+                <div class="our-works__item-content">
+                  <h3 class="our-works__item-title">Колода «Новогодний Оракул»</h3>
+                  <a class="our-works__item-link button-white" href="#">Подробнее</a>
+                </div>
+              </li>
+              <li class="our-works__item our-works__item--2 swiper-slide">
+                <div class="our-works__gradient"></div>
+
+                <div class="our-works__item-content">
+                  <h3 class="our-works__item-title">Таро Райдос</h3>
+                  <a class="our-works__item-link button-white" href="#">Подробнее</a>
+                </div>
+              </li>
+              <li class="our-works__item our-works__item--3 swiper-slide">
+                <div class="our-works__gradient"></div>
+
+                <div class="our-works__item-content">
+                  <h3 class="our-works__item-title">Метафорические карты «Проекция»</h3>
+                  <a class="our-works__item-link button-white" href="#">Подробнее</a>
+                </div>
+              </li>
+              <li class="our-works__item our-works__item--4 swiper-slide">
+                <div class="our-works__gradient"></div>
+
+                <div class="our-works__item-content">
+                  <h3 class="our-works__item-title">Метафорические карты «Алиса в стране чудес»</h3>
+                  <a class="our-works__item-link button-white" href="#">Подробнее</a>
+                </div>
+              </li>
+            </ul>
+
             <div class="our-works__slider swiper">
-              <ul class="our-works__grid swiper-wrapper">
+              <ul class="our-works__list swiper-wrapper">
                 <li class="our-works__item our-works__item--1 swiper-slide">
                   <div class="our-works__gradient"></div>
 
@@ -198,7 +233,7 @@
                 <h2 class="application-form__title">Расчет стоимости заказа</h2>
               </div>
 
-              <form class="application-form__form form" id="choose-application-form" name="application-form" action="#"
+              <form class="form" id="choose-application-form" name="application-form" action="#"
                 novalidate="novalidate">
                 <div class="form__block">
                   <label class="form__label" for="name">
@@ -218,6 +253,7 @@
                     <input name="ServiceForm[email]" class="form__input input-mail" autocomplete="off" type="email"
                       id="mail" placeholder="Ваша почта" data-validate-field="mail">
                   </label>
+
                   <div class="formgroup formgroup--w25 form__label">
                     Тут селект, он есть на сайте
                   </div>
@@ -229,9 +265,35 @@
                     data-validate-field="textarea" placeholder="Введите комментарий"></textarea>
                 </label>
 
-                <div class="form__approval">
-                  <button class="form__button">Отправить</button>
+                <div class="form__file-upload file-upload">
+                  <input class="file-upload__input" type="file" id="file-input">
+                  <label class="file-upload__label" for="file-input">
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M5.8286 14.9887C4.6719 14.9887 3.5839 14.5382 2.76578 13.72C1.0771 12.0314 1.0771 9.28303 2.76578 7.59439L8.54222 1.81787L9.44395 2.7203L3.66747 8.49605C2.47608 9.68817 2.47608 11.6269 3.66747 12.8183C4.24478 13.3956 5.0126 13.7136 5.8286 13.7136C6.6446 13.7136 7.41245 13.3956 7.98972 12.8183L10.8472 9.96087L13.7046 7.10344C14.415 6.393 14.415 5.23769 13.7046 4.52725C13.0161 3.83805 11.8155 3.84017 11.1283 4.52655L5.53183 10.1188C5.41422 10.2364 5.34978 10.3929 5.34978 10.5594C5.34978 10.7259 5.41422 10.8824 5.53253 11C5.7677 11.2373 6.17922 11.2359 6.4144 11L11.1128 6.30232L12.0145 7.20475L7.31683 11.9024C6.5752 12.6426 5.37103 12.6412 4.63083 11.9024C3.8906 11.1622 3.8906 9.95662 4.63083 9.21712L10.2273 3.62558C10.811 3.04121 11.5894 2.7189 12.4168 2.7189C13.2434 2.7189 14.0212 3.04048 14.6069 3.62558C15.8139 4.83328 15.8139 6.79821 14.6069 8.0059L8.89145 13.72C8.07333 14.5382 6.98603 14.9887 5.8286 14.9887Z"
+                        fill="white" />
+                    </svg>
+                    <span class="file-upload__text">Прикрепить файл</span>
+                  </label>
                 </div>
+
+                <div class="form__checkbox form__checkbox--hidden">
+                  <label class="form__label custom-checkbox">
+                    <input class="custom-checkbox__input input-checkbox visually-hidden" type="checkbox"
+                      data-validate-field="checkbox">
+
+                    <span class="custom-checkbox__span"></span>
+                  </label>
+
+                  <p class="form__checkbox-text">Я даю согласие на обработку персональных данных
+                    и соглашаюсь с <a class="form__text-link" href="#">политикой конфиденциальности</a></p>
+                </div>
+
+                <p class="form__policy-text">Нажимая кнопку «Отправить» вы даете согласие на обработку персональных
+                  данных
+                  и соглашаетесь с <a class="form__text-link" href="#">политикой конфиденциальности</a></p>
+
+                <button class="form__button">Отправить</button>
               </form>
             </div>
           </div>

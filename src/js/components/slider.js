@@ -22,3 +22,19 @@ const casesSlider = new Swiper(".cases__wrapper", {
     },
   },
 });
+
+const ourWorksSlider = new Swiper(".our-works__slider", {
+  slidesPerView: 1.1,
+  spaceBetween: 16,
+  watchSlidesVisibility: true,
+  enabled: true,
+  pagination: {
+    el: ".our-works__progressbar",
+    type: "progressbar",
+  },
+  breakpoints: {
+    768: {
+      enabled: false,
+    },
+  },
+});

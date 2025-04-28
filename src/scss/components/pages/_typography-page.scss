@@ -19,7 +19,6 @@
 
   &__section-container {
     background-color: var(--bg-color);
-
   }
 
   &__wrapper {
@@ -47,6 +46,54 @@
   &__our-works {
     @media screen and (width <=990px) {
       margin-bottom: 60px;
+    }
+  }
+
+  &__why-we {
+    &.why-we {
+      padding-top: 370px;
+
+      @media screen and (width <=990px) {
+        padding-top: 450px;
+      }
+
+      @media screen and (width <=768px) {
+        padding-top: 400px;
+      }
+    }
+  }
+
+  &__technical-solutions {
+    background-color: var(--bg-color);
+  }
+
+  &__trust {
+    .trust__title {
+      text-align: left;
+    }
+  }
+
+  &__questions {
+    .questions__title {
+      text-align: left;
+    }
+
+    .questions__accordion {
+      border-radius: 16px;
+    }
+
+    .accordion__item {
+      &:nth-child(1) {
+        padding-top: 0;
+
+        &::before {
+          display: none;
+        }
+      }
+
+      &:last-child {
+        padding-bottom: 0;
+      }
     }
   }
 }

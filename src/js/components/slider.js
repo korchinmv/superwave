@@ -38,3 +38,58 @@ const ourWorksSlider = new Swiper(".our-works__slider", {
     },
   },
 });
+
+const teamSlider = new Swiper(".team__slider", {
+  slidesPerView: 1.1,
+  watchSlidesVisibility: true,
+  enabled: true,
+  spaceBetween: 16,
+  pagination: {
+    el: ".team__progressbar",
+    type: "progressbar",
+  },
+  breakpoints: {
+    576: {
+      // При 576px и больше
+      enabled: false, // Отключаем слайдер
+      slidesPerView: "auto", // Слайды в их естественной ширине
+      autoWidth: true, // Разрешаем свою ширину
+      width: null, // Отключаем принудительный расчет ширины
+      spaceBetween: 0,
+    },
+  },
+});
+
+const processAutomationSlider = new Swiper(".process-automation__slider", {
+  slidesPerView: 1.1,
+  spaceBetween: 16,
+  watchSlidesVisibility: true,
+  navigation: {
+    nextEl: ".process-automation__slider-controls-next",
+    prevEl: ".process-automation__slider-controls-prev",
+  },
+  pagination: {
+    el: ".process-automation__progressbar",
+    type: "progressbar",
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+      spaceBetween: 24,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 24,
+      autoWidth: true, // Слайды занимают свою естественную ширину
+      width: null, // Отключаем принудительную ширину от Swiper
+    },
+    990: {
+      slidesPerView: 2,
+      spaceBetween: 24,
+    },
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 24,
+    },
+  },
+});

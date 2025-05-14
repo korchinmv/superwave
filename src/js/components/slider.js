@@ -93,3 +93,12 @@ const processAutomationSlider = new Swiper(".process-automation__slider", {
     },
   },
 });
+
+const equipmentSlider = new Swiper(".equipment__slider", {
+  slidesPerView: 1,
+  spaceBetween: 16,
+  navigation: {
+    nextEl: ".equipment__slider-controls-next",
+    prevEl: ".equipment__slider-controls-prev",
+  },
+});

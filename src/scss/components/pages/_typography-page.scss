@@ -4,6 +4,10 @@
   background-position: top;
   background-size: cover;
 
+  &.head-page {
+    padding-bottom: 136px;
+  }
+
   .head-page__title,
   .head-page__text {
     color: var(--white-color);
@@ -15,6 +19,10 @@
 
   .head-page__content {
     max-width: 650px;
+
+    &::after {
+      bottom: -150px;
+    }
   }
 
   &__section-container {

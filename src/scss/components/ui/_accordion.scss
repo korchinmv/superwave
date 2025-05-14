@@ -91,6 +91,10 @@
       overflow 0.3s,
       opacity 0.4s,
       max-height 0.3s ease-out;
+
+    a {
+      color: var(--accent-color);
+    }
   }
 
   &__name {

@@ -47,6 +47,20 @@
 
   &__item {
     border-radius: 8px;
+    position: relative;
+
+
+  }
+
+  &__gradient {
+    background: linear-gradient(180deg, rgba(35, 35, 35, 0.1) 0%, rgba(35, 35, 35, 0.2) 70%, rgba(35, 35, 35, 0.6) 100%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: opacity 0.4s ease;
+    border-radius: inherit;
   }
 
   &__item-link {

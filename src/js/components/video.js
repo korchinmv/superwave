@@ -1,23 +1,27 @@
 document.addEventListener("DOMContentLoaded", function () {
   const video = document.querySelector(".video__v");
-  const playButton = document.querySelector(".video__play");
+  const videoContainer = document.querySelector(".video");
+  const playButton = document.querySelector(".video__play"); // если есть кнопка Play
 
-  // Включаем controls при воспроизведении
+  // Включаем controls и убираем градиент при воспроизведении
   video.addEventListener("play", function () {
     video.setAttribute("playing", "");
     video.controls = true;
+    videoContainer.classList.add("video-playing"); // скрываем градиент
   });
 
-  // Выключаем controls при паузе
+  // Возвращаем градиент при паузе
   video.addEventListener("pause", function () {
     video.removeAttribute("playing");
     video.controls = false;
+    videoContainer.classList.remove("video-playing"); // показываем градиент
   });
 
-  // Выключаем controls при окончании видео
+  // Возвращаем градиент при окончании видео
   video.addEventListener("ended", function () {
     video.removeAttribute("playing");
     video.controls = false;
+    videoContainer.classList.remove("video-playing"); // показываем градиент
   });
 
   // Клик по видео для паузы/воспроизведения
@@ -29,8 +33,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Клик по кнопке Play
-  playButton.addEventListener("click", function () {
-    video.play();
-  });
+  // Клик по кнопке Play (если есть)
+  if (playButton) {
+    playButton.addEventListener("click", function () {
+      video.play();
+    });
+  }
 });

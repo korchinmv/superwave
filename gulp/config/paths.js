@@ -1,5 +1,5 @@
-const srcFolder = './src';
-const buildFolder = './app';
+const srcFolder = "./src";
+const buildFolder = "./app";
 
 export const paths = {
   base: {
@@ -16,4 +16,5 @@ export const paths = {
   buildJsFolder: `${buildFolder}/js`,
   srcPartialsFolder: `${srcFolder}/partials`,
   resourcesFolder: `${srcFolder}/resources`,
+  videoFolder: `${srcFolder}/video`,
 };

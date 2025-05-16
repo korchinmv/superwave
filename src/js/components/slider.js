@@ -80,15 +80,13 @@ const processAutomationSlider = new Swiper(".process-automation__slider", {
     768: {
       slidesPerView: 3,
       spaceBetween: 24,
-      autoWidth: true, // Слайды занимают свою естественную ширину
-      width: null, // Отключаем принудительную ширину от Swiper
     },
     990: {
-      slidesPerView: 2,
+      slidesPerView: 4,
       spaceBetween: 24,
     },
     1200: {
-      slidesPerView: 3,
+      slidesPerView: 4,
       spaceBetween: 24,
     },
   },

@@ -86,14 +86,14 @@
     }
 
     &--3 {
-      background-image: url("../img/works/3.jpg");
+      background-image: url("../img/works/5.jpg");
 
     }
 
     &--4 {
       grid-column-start: 2;
       grid-column-end: 4;
-      background-image: url("../img/works/4.jpg");
+      background-image: url("../img/works/6.jpg");
 
       @media screen and (width <=1024px) {
         grid-column-end: 3;

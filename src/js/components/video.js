@@ -1,42 +1,47 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const video = document.querySelector(".video__v");
-  const videoContainer = document.querySelector(".video");
-  const playButton = document.querySelector(".video__play"); // если есть кнопка Play
+  // Выбираем все видео-контейнеры на странице
+  const videoContainers = document.querySelectorAll(".video");
 
-  // Включаем controls и убираем градиент при воспроизведении
-  video.addEventListener("play", function () {
-    video.setAttribute("playing", "");
-    video.controls = true;
-    videoContainer.classList.add("video-playing"); // скрываем градиент
-  });
+  videoContainers.forEach((videoContainer) => {
+    const video = videoContainer.querySelector(".video__v");
+    const playButton = videoContainer.querySelector(".video__play");
 
-  // Возвращаем градиент при паузе
-  video.addEventListener("pause", function () {
-    video.removeAttribute("playing");
-    video.controls = false;
-    videoContainer.classList.remove("video-playing"); // показываем градиент
-  });
+    // Включаем controls и убираем градиент при воспроизведении
+    video.addEventListener("play", function () {
+      video.setAttribute("playing", "");
+      video.controls = true;
+      videoContainer.classList.add("video-playing");
+    });
 
-  // Возвращаем градиент при окончании видео
-  video.addEventListener("ended", function () {
-    video.removeAttribute("playing");
-    video.controls = false;
-    videoContainer.classList.remove("video-playing"); // показываем градиент
-  });
+    // Возвращаем градиент при паузе
+    video.addEventListener("pause", function () {
+      video.removeAttribute("playing");
+      video.controls = false;
+      videoContainer.classList.remove("video-playing");
+    });
 
-  // Клик по видео для паузы/воспроизведения
-  video.addEventListener("click", function () {
-    if (video.paused) {
-      video.play();
-    } else {
-      video.pause();
+    // Возвращаем градиент при окончании видео
+    video.addEventListener("ended", function () {
+      video.removeAttribute("playing");
+      video.controls = false;
+      videoContainer.classList.remove("video-playing");
+    });
+
+    // Клик по видео для паузы/воспроизведения
+    video.addEventListener("click", function () {
+      if (video.paused) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    });
+
+    // Клик по кнопке Play (если есть)
+    if (playButton) {
+      playButton.addEventListener("click", function (e) {
+        e.stopPropagation(); // Предотвращаем срабатывание клика по видео
+        video.play();
+      });
     }
   });
-
-  // Клик по кнопке Play (если есть)
-  if (playButton) {
-    playButton.addEventListener("click", function () {
-      video.play();
-    });
-  }
 });

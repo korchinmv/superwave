@@ -162,6 +162,8 @@
     }
   }
 
+
+
   &__item-content {
     position: absolute;
     margin-top: auto;
@@ -195,13 +197,18 @@
     }
   }
 
+  &__item-title-hide {
+    @media screen and (width <=1200px) {
+      display: none;
+    }
+  }
+
   &__item-title {
     margin-bottom: 24px;
 
     @media screen and (width <=768px) {
       margin-bottom: 16px;
     }
-
   }
 
   &__item-text {

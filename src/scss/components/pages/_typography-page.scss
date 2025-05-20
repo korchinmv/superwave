@@ -80,6 +80,15 @@
       padding-bottom: 150px;
     }
 
+    .trust__list {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .trust__item:not(:last-child) {
+      margin-right: 30px;
+    }
+
     .trust__title {
       text-align: left;
     }

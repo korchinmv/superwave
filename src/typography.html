@@ -361,34 +361,89 @@
         <div class="equipment__tabs tabs">
           <div class="tabs__head">
             <ul class="tabs__nav">
-              <li class="tabs__nav-item tabs__nav-item--active" data-target="1">
-                <button class="tabs__nav-btn">Тигельный пресс</button>
-              </li>
-              <li class="tabs__nav-item" data-target="2">
-                <button class="tabs__nav-btn">Фотополимерный 3D принтер</button>
-              </li>
-              <li class="tabs__nav-item" data-target="3">
-                <button class="tabs__nav-btn">FDM 3D принтер</button>
-              </li>
-              <li class="tabs__nav-item" data-target="4">
+              <li class="tabs__nav-item" data-target="1">
                 <button class="tabs__nav-btn">Роспуск карт</button>
               </li>
-              <li class="tabs__nav-item" data-target="5">
+              <li class="tabs__nav-item" data-target="2">
                 <button class="tabs__nav-btn">Кашировка тайлов</button>
+              </li>
+              <li class="tabs__nav-item tabs__nav-item--active" data-target="3">
+                <button class="tabs__nav-btn">Тигельный пресс</button>
+              </li>
+              <li class="tabs__nav-item" data-target="4">
+                <button class="tabs__nav-btn">Фотополимерный 3D принтер</button>
+              </li>
+              <li class="tabs__nav-item" data-target="5">
+                <button class="tabs__nav-btn">FDM 3D принтер</button>
               </li>
             </ul>
           </div>
 
           <select class="equipment__select select">
             <option class="select__option" value="1">Роспуск карт</option>
-            <option class="select__option" value="2">Фотополимерный 3D принтер</option>
-            <option class="select__option" value="3">FDM 3D принтер</option>
-            <option class="select__option" value="4">Тигельный пресс</option>
-            <option class="select__option" value="5">Кашировка тайлов</option>
+            <option class="select__option" value="2">Кашировка тайлов</option>
+            <option class="select__option" value="3">Тигельный пресс</option>
+            <option class="select__option" value="4">Фотополимерный 3D принтер</option>
+            <option class="select__option" value="5">FDM 3D принтер</option>
           </select>
 
           <ul class="tabs__content">
             <li class="tabs__panel tabs__panel--active" id="1">
+              <div class="equipment__wrapper">
+                <h3 class="equipment__content-name-mobile">UANCHOR FQ 1020B</h3>
+
+                <div class="equipment__img-wrap">
+                  <img class="equipment__img" src="img/equipment/1.jpg" alt="Pic">
+                </div>
+
+                <div class="equipment__content">
+                  <h3 class="equipment__content-name">UANCHOR FQ 1020B</h3>
+
+                  <p class="equipment__content-text">Выполняет полный цикл операций по изготовлению игральных карт и
+                    карточек для игр - от чистого листа до подбора готовых карт в колоду. Печатный лист распускается на
+                    колоды карт с размером после обрезки от 78х48 до 148х118 мм.</p>
+
+                  <div class="equipment__content-bot">
+                    <span class="equipment__content-descr">Скорость работы</span>
+                    <div class="equipment__qty">
+                      <span class="equipment__num">1500</span>
+                      <span class="equipment__qty-word">л./ч</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="tabs__panel" id="2">
+              <div class="equipment__wrapper">
+                <h3 class="equipment__content-name-mobile">Крышкоделательная машина Horda Кашировка тайлов или игровых
+                  полей
+                </h3>
+
+                <div class="equipment__img-wrap">
+                  <img class="equipment__img" src="img/equipment/5.jpg" alt="Pic">
+                </div>
+
+                <div class="equipment__content">
+                  <h3 class="equipment__content-name">Крышкоделательная машина Horda Кашировка тайлов или игровых полей
+                  </h3>
+
+                  <p class="equipment__content-text">Применяется для изготовления твердых игровых полей, обложек для
+                    фотоальбомов, тайлов, каталогов, детских игр, а также упаковочных коробок и т.д. Возможна накатка
+                    лайнеров на переплетный картон с загибом и без загиба сторон.</p>
+
+                  <div class="equipment__content-bot">
+                    <span class="equipment__content-descr">Производительность</span>
+                    <div class="equipment__qty">
+                      <span class="equipment__num">25</span>
+                      <span class="equipment__qty-word">шт./мин</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="tabs__panel" id="3">
               <div class="equipment__wrapper">
                 <h3 class="equipment__content-name-mobile">Тигельный пресс</h3>
 
@@ -449,7 +504,7 @@
               </div>
             </li>
 
-            <li class="tabs__panel" id="2">
+            <li class="tabs__panel" id="4">
               <div class="equipment__wrapper">
                 <h3 class="equipment__content-name-mobile">Фотополимерный 3D принтер</h3>
 
@@ -511,8 +566,7 @@
               </div>
             </li>
 
-
-            <li class="tabs__panel" id="3">
+            <li class="tabs__panel" id="5">
               <div class="equipment__wrapper">
                 <h3 class="equipment__content-name-mobile">FDM 3D принтер</h3>
 
@@ -520,8 +574,8 @@
                   <ul class="equipment__slider-wrapper swiper-wrapper">
                     <li class="equipment__slider-item swiper-slide">
                       <div class="equipment__video video">
-                        <video class="video__v" muted playsinline poster="img/equipment/3.jpg">
-                          <source src="video/photo3d.mp4" type="video/mp4">
+                        <video class="video__v" muted playsinline poster="img/equipment/3.png">
+                          <source src="video/fdm3d.mp4" type="video/mp4">
                           Ваш браузер не поддерживает видео.
                         </video>
 
@@ -536,7 +590,7 @@
 
                     <li class="equipment__slider-item swiper-slide">
                       <div class="equipment__img-wrap">
-                        <img class="equipment__img" src="img/equipment/3.jpg" alt="Pic">
+                        <img class="equipment__img" src="img/equipment/3.png" alt="Pic">
                       </div>
                     </li>
                   </ul>
@@ -569,61 +623,6 @@
                     <div class="equipment__qty">
                       <span class="equipment__num">240</span>
                       <span class="equipment__qty-word">мм/с</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-
-            <li class="tabs__panel" id="4">
-              <div class="equipment__wrapper">
-                <h3 class="equipment__content-name-mobile">UANCHOR FQ 1020B</h3>
-
-                <div class="equipment__img-wrap">
-                  <img class="equipment__img" src="img/equipment/1.jpg" alt="Pic">
-                </div>
-
-                <div class="equipment__content">
-                  <h3 class="equipment__content-name">UANCHOR FQ 1020B</h3>
-
-                  <p class="equipment__content-text">Выполняет полный цикл операций по изготовлению игральных карт и
-                    карточек для игр - от чистого листа до подбора готовых карт в колоду. Печатный лист распускается на
-                    колоды карт с размером после обрезки от 78х48 до 148х118 мм.</p>
-
-                  <div class="equipment__content-bot">
-                    <span class="equipment__content-descr">Скорость работы</span>
-                    <div class="equipment__qty">
-                      <span class="equipment__num">1500</span>
-                      <span class="equipment__qty-word">л./ч</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-
-            <li class="tabs__panel" id="5">
-              <div class="equipment__wrapper">
-                <h3 class="equipment__content-name-mobile">Крышкоделательная машина Horda Кашировка тайлов или игровых
-                  полей
-                </h3>
-
-                <div class="equipment__img-wrap">
-                  <img class="equipment__img" src="img/equipment/5.jpg" alt="Pic">
-                </div>
-
-                <div class="equipment__content">
-                  <h3 class="equipment__content-name">Крышкоделательная машина Horda Кашировка тайлов или игровых полей
-                  </h3>
-
-                  <p class="equipment__content-text">Применяется для изготовления твердых игровых полей, обложек для
-                    фотоальбомов, тайлов, каталогов, детских игр, а также упаковочных коробок и т.д. Возможна накатка
-                    лайнеров на переплетный картон с загибом и без загиба сторон.</p>
-
-                  <div class="equipment__content-bot">
-                    <span class="equipment__content-descr">Производительность</span>
-                    <div class="equipment__qty">
-                      <span class="equipment__num">25</span>
-                      <span class="equipment__qty-word">шт./мин</span>
                     </div>
                   </div>
                 </div>
@@ -665,7 +664,7 @@
       <div class="container">
         <div class="section-inner">
           <div class="section-head-slider">
-            <div class="h2">Как мы работаем</div>
+            <div class="h2">Автоматизацию процессов</div>
 
             <div class="process-automation__slider-controls-btns">
               <button

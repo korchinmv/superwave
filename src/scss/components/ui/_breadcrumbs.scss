@@ -1,7 +1,21 @@
 .breadcrumbs {
   font-size: 16px;
 
-  @media screen and (width <= 991px) {
+  &--light {
+    .breadcrumbs__item {
+      color: #a8b8c7;
+    }
+
+    .breadcrumbs__item--active {
+      color: var(--black-color);
+
+      &:hover {
+        color: var(--black-color);
+      }
+    }
+  }
+
+  @media screen and (width <=991px) {
     font-size: 14px;
   }
 

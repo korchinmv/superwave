@@ -1,7 +1,7 @@
-@import './vendor/normalize';
+@use './vendor/normalize';
 
 // стили для свайпера
-@import '../../node_modules/swiper/swiper-bundle.min';
+@use '../../node_modules/swiper/swiper-bundle.min';
 
 // стили для модального окна
 // @import "../../node_modules/graph-modal/dist/graph-modal.min";

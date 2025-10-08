@@ -1,6 +1,6 @@
 .application-form {
   background-color: var(--accent-color);
-  background-image: url('../img/form/bg-form.png');
+  background-image: url('../img/form/lines.svg');
   background-position: right;
   background-repeat: no-repeat;
   border-radius: 16px;
@@ -9,6 +9,8 @@
 
   @media screen and (width <=768px) {
     padding: 24px;
+    background-image: url('../img/form/lines2.svg');
+
   }
 
   &__wrapper {

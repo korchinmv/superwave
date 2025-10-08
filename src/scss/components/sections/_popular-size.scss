@@ -51,8 +51,15 @@
   }
 
   &__info-text {
-    font-weight: 500;
+    font-family: "Montserrat";
+    font-weight: 400;
     font-size: 14px;
+
+    span {
+      @media screen and (width <=768px) {
+        display: none;
+      }
+    }
   }
 
   &__icon {

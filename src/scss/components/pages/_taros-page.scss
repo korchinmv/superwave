@@ -23,6 +23,8 @@
 
   &__text-block {
     padding-top: 40px;
+    font-family: "Montserrat";
+    font-weight: 400;
   }
 
   &__efficiency-decor-wrap {
@@ -32,6 +34,11 @@
 
   &__popular-size {
     margin-bottom: 80px;
+
+    .text-block__text {
+      font-family: "Montserrat";
+      font-weight: 400;
+    }
 
     @media screen and (width <=768px) {
       margin-bottom: 60px;
@@ -49,8 +56,6 @@
   }
 
   &__questions {
-
-
     &.questions {
       padding: 167px 0 120px;
 
@@ -100,6 +105,11 @@
   }
 
   &__finishing {
+    .finishing__text {
+      font-family: "Montserrat";
+      font-weight: 400;
+    }
+
     &.finishing {
       padding-bottom: 370px;
     }
@@ -108,6 +118,10 @@
   &__wrapper {
     position: relative;
     padding: 360px 0 120px 0;
+
+    @media screen and (width <=768px) {
+      padding-bottom: 60px;
+    }
   }
 
   &__form {
@@ -117,5 +131,12 @@
     top: 0;
     transform: translateY(-50%);
     width: 100%;
+  }
+
+  &__technical-solutions {
+    .technical-solutions__text {
+      font-family: "Montserrat";
+      font-weight: 400;
+    }
   }
 }

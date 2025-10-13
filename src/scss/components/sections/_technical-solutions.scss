@@ -115,4 +115,12 @@
       border-radius: 0 0 16px 16px;
     }
   }
+
+  &__card-title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: var(--white-color);
+  }
 }

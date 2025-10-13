@@ -76,4 +76,30 @@
   &__breadcrumbs {
     margin-bottom: 80px;
   }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (width <=768px) {
+      flex-direction: column;
+    }
+  }
+
+  &__img {
+    max-height: 424px;
+    position: relative;
+    right: -150px;
+
+    @media screen and (width <=1350px) {
+      right: 0;
+      max-height: 300px;
+    }
+
+    @media screen and (width <=768px) {
+      right: 0;
+      max-height: 200px;
+    }
+  }
 }

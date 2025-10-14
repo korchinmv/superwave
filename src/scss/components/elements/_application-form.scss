@@ -3,6 +3,7 @@
   background-image: url('../img/form/lines.svg');
   background-position: right;
   background-repeat: no-repeat;
+  background-size: 673px;
   border-radius: 16px;
   padding: 56px 32px;
   color: var(--black-color);
@@ -11,15 +12,6 @@
     padding: 24px;
     background-image: url('../img/form/lines2.svg');
 
-  }
-
-  &__wrapper {
-    display: flex;
-    justify-content: space-between;
-
-    @media screen and (width <=990px) {
-      flex-direction: column;
-    }
   }
 
   &__left {

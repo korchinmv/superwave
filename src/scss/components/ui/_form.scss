@@ -7,6 +7,7 @@
   &__label {
     display: flex;
     flex-direction: column;
+    width: 100%;
 
     &--textarea {
       margin-bottom: 24px;
@@ -24,6 +25,10 @@
 
     @media screen and (width <=768px) {
       font-size: 14px;
+    }
+
+    span {
+      color: #E85A52;
     }
   }
 
@@ -52,6 +57,7 @@
     color: var(--white-color);
     font-family: "Montserrat";
     font-weight: 400;
+    font-size: 14px;
   }
 
   &__block {
@@ -127,10 +133,5 @@
       font-size: 12px;
       color: var(--white-color);
     }
-  }
-
-  .file-upload__text {
-    font-family: "Montserrat";
-    font-weight: 400;
   }
 }

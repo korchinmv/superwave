@@ -60,6 +60,27 @@ const teamSlider = new Swiper(".team__slider", {
   },
 });
 
+const detailSlider = new Swiper(".detail-page__table-games-swiper", {
+  slidesPerView: 1.1,
+  watchSlidesVisibility: true,
+  enabled: true,
+  spaceBetween: 24,
+  pagination: {
+    el: ".detail-page__table-progressbar",
+    type: "progressbar",
+  },
+  breakpoints: {
+    768: {
+      // При 576px и больше
+      enabled: false, // Отключаем слайдер
+      slidesPerView: "auto", // Слайды в их естественной ширине
+      autoWidth: true, // Разрешаем свою ширину
+      width: null, // Отключаем принудительный расчет ширины
+      spaceBetween: 0,
+    },
+  },
+});
+
 const processAutomationSlider = new Swiper(".process-automation__slider", {
   slidesPerView: 1.1,
   spaceBetween: 16,

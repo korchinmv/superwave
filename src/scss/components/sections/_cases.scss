@@ -13,6 +13,25 @@
     margin-bottom: 30px;
   }
 
+  &__item-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item-img-content {
+    max-width: 396px;
+    width: 100%;
+    object-fit: contain;
+
+    @media screen and (width <=768px) {
+      display: none;
+    }
+  }
+
+  &__item-left {
+    max-width: 570px;
+  }
+
   &__inner {
     display: flex;
   }

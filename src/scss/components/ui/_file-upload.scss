@@ -14,21 +14,24 @@
 
   &__label {
     display: flex;
+    flex-direction: column;
     column-gap: 10px;
     align-items: center;
     cursor: pointer;
-
-    svg {
-      width: 20px;
-      height: 20px;
-      flex-shrink: 0;
-      margin-bottom: 3px;
-    }
+    justify-content: flex-start;
   }
 
   &__text {
-    font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1;
+    font-family: "Montserrat";
+    font-weight: 600;
+    align-self: flex-start;
+    margin-bottom: 7px;
+  }
+
+  &__btn {
+    align-self: flex-start;
+    border: 1px solid var(--black-color);
   }
 }

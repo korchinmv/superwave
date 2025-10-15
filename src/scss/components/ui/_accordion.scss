@@ -95,6 +95,14 @@
     a {
       color: var(--accent-color);
     }
+
+    ul {
+      padding-left: 20px;
+
+      li {
+        list-style-type: disc;
+      }
+    }
   }
 
   &__name {

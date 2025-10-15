@@ -27,6 +27,22 @@
     padding-top: 40px;
     font-family: "Montserrat";
     font-weight: 400;
+
+    .text-block__text--desk {
+      display: block;
+
+      @media screen and (width <=768px) {
+        display: none;
+      }
+    }
+
+    .text-block__text--mobile {
+      display: none;
+
+      @media screen and (width <=768px) {
+        display: block;
+      }
+    }
   }
 
   &__efficiency-decor-wrap {

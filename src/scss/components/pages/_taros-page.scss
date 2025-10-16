@@ -1,12 +1,12 @@
 .taros-page {
-  background-image: url('../img/hero/taros-hero.jpg');
+  background-image: url('../img/hero/taros-hero2.jpg');
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
 
-  @media screen and (width <=768px) {
-    background-image: url('../img/hero/taros-bg-mobile.jpg');
-  }
+  // @media screen and (width <=768px) {
+  //   background-image: url('../img/hero/taros-bg-mobile.jpg');
+  // }
 
   &.head-page {
     padding-bottom: 136px;

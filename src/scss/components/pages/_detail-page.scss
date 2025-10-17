@@ -39,6 +39,11 @@
     text-align: left;
   }
 
+  &__variants-button {
+    display: block;
+    width: fit-content;
+  }
+
   &__variants-item-title {
     font-weight: 600;
     font-size: 28px;
@@ -99,6 +104,10 @@
         }
       }
     }
+  }
+
+  &__variants-img {
+    margin-top: auto;
   }
 
   &__variants-item-left {

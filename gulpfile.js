@@ -39,7 +39,7 @@ const watcher = () => {
   gulp.watch(`${app.paths.base.src}/*.html`, htmlInclude);
   gulp.watch(`${app.paths.resourcesFolder}/**`, resources);
   gulp.watch(`${app.paths.srcImgFolder}/**/**.{jpg,jpeg,png,svg}`, images);
-  gulp.watch(`${app.paths.srcImgFolder}/**/**.{jpg,jpeg,png}`, webpImages);
+  // gulp.watch(`${app.paths.srcImgFolder}/**/**.{jpg,jpeg,png}`, webpImages);
   gulp.watch(app.paths.srcSvg, svgSprites);
   // gulp.watch(app.paths.videoFolder, video);
 };
@@ -73,7 +73,6 @@ const build = gulp.series(
   styles,
   resources,
   images,
-  webpImages,
   svgSprites,
   htmlMinify,
   video

@@ -186,4 +186,464 @@
       gap: 8px;
     }
   }
+
+  &__info {
+    margin-bottom: 120px;
+
+    @media screen and (width <=768px) {
+      margin-bottom: 64px;
+    }
+  }
+
+  &__info-title {
+    text-align: left;
+    margin-bottom: 40px;
+
+    @media screen and (width <=768px) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__info-name {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+
+  &__info-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    font-family: "Montserrat";
+  }
+
+  &__info-img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+  }
+
+  &__info-list {
+    display: flex;
+    column-gap: 22px;
+
+    @media screen and (width <=768px) {
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+
+  &__why-we-title {
+    text-align: left;
+    margin-bottom: 40px;
+
+    @media screen and (width <=768px) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__section-container {
+    background-color: var(--bg-color);
+  }
+
+  &__wrapper {
+    position: relative;
+    padding: 120px 0 430px 0;
+
+    @media screen and (width <=768px) {
+      padding-top: 60px;
+    }
+  }
+
+  &__form {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(50%);
+    width: 100%;
+
+    .application-form__title {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__why-we-list {
+    display: flex;
+    column-gap: 125px;
+
+    @media screen and (width <=768px) {
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
+
+  &__why-we-num {
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    color: var(--accent-color);
+    font-family: "Oswald";
+  }
+
+  &__why-we-name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.25;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    color: var(--accent-color);
+    font-family: "Oswald";
+  }
+
+  &__why-we-subname {
+    font-family: "Montserrat";
+    font-size: 16px;
+  }
+
+  &__cases {
+    &.cases {
+      background-color: var(--white-color);
+    }
+
+    .cases__title {
+      @media screen and (width <=768px) {
+        margin-bottom: 0;
+      }
+    }
+
+    .cases__item {
+      background-color: var(--bg-color);
+    }
+  }
+
+  &__games-dev {
+    padding-top: 448px;
+  }
+
+  &__games-dev-title {
+    text-align: left;
+    margin-bottom: 30px;
+
+    @media screen and (width <=768px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__games-dev-text,
+  &__games-dev-item {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.33333;
+
+    @media screen and (width <=768px) {
+      font-size: 16px;
+    }
+  }
+
+  &__games-dev-text {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__games-dev-list {
+    padding-left: 20px;
+    margin-bottom: 40px;
+
+    @media screen and (width <=768px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__games-dev-item {
+    list-style-type: disc;
+
+    &::marker {
+      color: var(--accent-color);
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__games-dev-link {
+    display: block;
+    width: fit-content;
+  }
+
+  &__games-dev-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 25px;
+
+    @media screen and (width <=768px) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__games-dev-img {
+    height: 326px;
+
+    @media screen and (width <=768px) {
+      align-self: flex-start;
+    }
+  }
+
+  &__games-dev-content {
+    @media screen and (width <=768px) {
+      align-self: flex-start;
+    }
+  }
+
+  &__how-we-work {
+    padding: 120px 0;
+
+    @media screen and (width <=768px) {
+      padding: 64px 0;
+    }
+  }
+
+  &__how-we-work-title {
+    text-align: left;
+    margin-bottom: 30px;
+
+    @media screen and (width <=768px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__how-we-work-slider {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+
+    @media screen and (width <=768px) {
+      margin-bottom: 16px;
+      display: flex;
+      gap: 0;
+    }
+  }
+
+  &__how-we-work-item {
+    background-color: var(--white-color);
+    border-radius: 20px;
+    padding: 20px;
+    height: 305px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #69b32d;
+
+    @media screen and (width <=768px) {
+      height: 208px;
+      overflow: hidden;
+      padding: 18px;
+    }
+
+    &:nth-child(odd) {
+      background-color: #69b32d;
+
+      .games-page__how-we-work-num,
+      .games-page__how-we-work-item-name,
+      .games-page__how-we-work-item-text {
+        color: var(--white-color);
+      }
+    }
+  }
+
+  &__how-we-work-item-name {
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: "Oswald";
+    margin-bottom: 32px;
+    color: #69b32d;
+
+    @media screen and (width <=768px) {
+      font-size: 16px;
+      margin-bottom: 28px;
+    }
+  }
+
+  &__how-we-work-item-text {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: "Montserrat";
+
+    @media screen and (width <=768px) {
+      font-size: 12px;
+    }
+  }
+
+  &__how-we-work-num {
+    font-weight: 500;
+    font-size: 80px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Oswald";
+    margin-top: auto;
+    align-self: flex-start;
+    color: #69b32d;
+
+    @media screen and (width <=768px) {
+      position: relative;
+      bottom: -45px;
+    }
+  }
+
+  &__how-we-work-progressbar {
+    position: relative;
+  }
+
+
+  &__marketplace {}
+
+  &__marketplace-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  &__marketplace-title {
+    text-align: left;
+  }
+
+  &__marketplace-slider-controls-btns {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+
+    @media screen and (width <=768px) {
+      display: none;
+    }
+  }
+
+  &__marketplace-slider {
+    @media screen and (width <=768px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__marketplace-item {
+    background-image: url("../img/detail/card-decor.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    min-height: 450px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__marketplace-item-img {
+    margin-bottom: 24px;
+    max-height: 196px;
+    object-fit: contain;
+  }
+
+  &__marketplace-item-inner {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+  }
+
+  &__marketplace-item-name {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+
+  &__marketplace-item-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    font-family: "Montserrat";
+    margin-bottom: 24px;
+  }
+
+  &__marketplace-item-link {
+    background-color: #005BFF;
+    border-radius: 20px;
+    padding: 13px 24px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.30667;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    color: var(--white-color);
+    margin-top: auto;
+  }
+
+  &__marketplace-item-link-img {
+    width: 90px;
+    object-fit: contain;
+  }
+
+  &__marketplace-progressbar {
+    position: relative;
+    display: none;
+
+    @media screen and (width <=768px) {
+      display: block;
+    }
+  }
+
+  &__technical-solutions {
+    .technical-solutions__img-wrap {
+      display: flex;
+      align-items: center;
+      padding-right: 24px;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    .technical-solutions__img {
+      max-width: 423px;
+      height: 92px;
+
+      @media screen and (width <=768px) {
+        display: none;
+      }
+    }
+
+    .technical-solutions__card {
+      background-image: url("../img/games/solutions-bg.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @media screen and (width <=768px) {
+        flex-direction: row;
+      }
+    }
+
+    .technical-solutions__img-mobile {
+      display: none;
+      width: 88px;
+      height: 88px;
+      flex-shrink: 0;
+
+      @media screen and (width <=768px) {
+        display: block;
+      }
+    }
+  }
 }

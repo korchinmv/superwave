@@ -121,3 +121,52 @@ const equipmentSlider = new Swiper(".equipment__slider", {
     prevEl: ".equipment__slider-controls-prev",
   },
 });
+
+const howWeWorkSlider = new Swiper(".games-page__how-we-work-wrapper", {
+  slidesPerView: 1.3,
+  watchSlidesVisibility: true,
+  enabled: true,
+  spaceBetween: 20,
+  pagination: {
+    el: ".games-page__how-we-work-progressbar",
+    type: "progressbar",
+  },
+  breakpoints: {
+    768: {
+      // При 576px и больше
+      enabled: false, // Отключаем слайдер
+      slidesPerView: "auto", // Слайды в их естественной ширине
+      autoWidth: true, // Разрешаем свою ширину
+      width: null, // Отключаем принудительный расчет ширины
+      spaceBetween: 0,
+    },
+  },
+});
+
+const marketplaceSlider = new Swiper(".games-page__marketplace-wrapper", {
+  slidesPerView: 1.1,
+  spaceBetween: 16,
+  watchSlidesVisibility: true,
+  navigation: {
+    nextEl: ".games-page__marketplace-slider-controls-next",
+    prevEl: ".games-page__marketplace-slider-controls-prev",
+  },
+  pagination: {
+    el: ".games-page__marketplace-progressbar",
+    type: "progressbar",
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 24,
+    },
+    990: {
+      slidesPerView: 3,
+      spaceBetween: 24,
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 24,
+    },
+  },
+});

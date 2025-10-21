@@ -74,8 +74,7 @@ const build = gulp.series(
   resources,
   images,
   svgSprites,
-  htmlMinify,
-  video
+  htmlMinify
 );
 const cache = gulp.series(cacheTask, rewrite);
 const zip = zipFiles;
